@@ -132,4 +132,28 @@ ul.ingredients-list > li {
   margin-bottom: 8px;
 }
 
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.spinner-icon {
+  animation: spin 1s linear infinite;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #D17557; /* Match the color with your "Get Recipe" button */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
